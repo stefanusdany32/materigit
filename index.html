@@ -6,4 +6,22 @@
         <h1>C4180165</h1>
         <h2>Stefanus Dany Suharto</h2>
     </body>
+    <input type="date" id="birthday" name="birthday">
+  <button id="klik" onclick="myfunction()">button</button>
+  <input type ="date" id="hasil">
+  <script>
+    function myfunction(){
+  
+var tgl = document.getElementById("birthday").value
+var date1 = new Date(tgl)
+var date = new Date();
+//alert('the original date is ' + date);
+var newdate = new Date(date);
+
+newdate.setDate(newdate.getDate() - date1.getDate()); // minus the date
+
+var nd = new Date(newdate);
+alert('Selisih ' + nd.getDate());
+}
+  </script>
 </html>
