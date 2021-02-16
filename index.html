@@ -8,5 +8,26 @@
         <h3>Aplikasi Mobile Berbasis Web</h3>
         <h3>Ide : Menambahkan materi yang belum diajarkan dalam ppm kemarin</h3>
         <h4>Mendapatkan cara bagaimana untuk merge , cherry pick, memindahkan master , memindahkan head</h4>
+        <input type="date" id="birthday" name="birthday">
+  
+        <input type ="date" id="hasil" name="hasil">
+        <button id="klik" onclick="myfunction()">button</button>
+        <script>
+          function myfunction(){
+        
+      var tgl = document.getElementById("birthday").value
+      var tgl2 = document.getElementById("hasil").value
+      var date1 = new Date(tgl)
+      var date2 = new Date(tgl2)
+      var date = new Date();
+      //alert('the original date is ' + date);
+      var newdate = new Date(date);
+      
+      newdate.setDate(date2.getDate() - date1.getDate()); // minus the date
+      
+      var nd = new Date(newdate);
+      alert('Selisih ' + nd.getDate();
+      }
+      </script>
     </body>
 </html>
